@@ -107,12 +107,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Data
 PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
     librmnetctl
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/dataservices-sm8250
 
 # Debug logging (PLAN L4)
 PRODUCT_PACKAGES_DEBUG += \
