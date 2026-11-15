@@ -302,17 +302,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    ims-ext-common \
-    qti-telephony-hidl-wrapper \
-    qti-telephony-utils \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
