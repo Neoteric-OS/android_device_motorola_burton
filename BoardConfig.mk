@@ -139,7 +139,16 @@ TARGET_MODULE_ALIASES += \
     wcd_core_dlkm.ko:audio_wcd_core.ko \
     wsa881x_dlkm.ko:audio_wsa881x.ko \
     wsa_macro_dlkm.ko:audio_wsa_macro.ko \
-    wlan.ko:qca_cld3_qca6390.ko
+    wlan.ko:qca_cld3_qca6390.ko \
+    irq-madera.ko:cirrus_irq-madera.ko \
+    pinctrl-madera.ko:madera-pinctrl.ko \
+    snd-soc-aov-trigger.ko:aov_trigger.ko \
+    snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
+    snd-soc-cs35l41-i2c.ko:cirrus_cs35l41-i2c.ko \
+    snd-soc-cs35l41-spi.ko:cirrus_cs35l41-spi.ko \
+    snd-soc-cs47l35.ko:cirrus_cs47l35.ko \
+    snd-soc-madera.ko:cirrus_madera.ko \
+    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
