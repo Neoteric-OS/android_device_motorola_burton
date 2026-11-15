@@ -122,9 +122,6 @@ vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxMpeghDecSw.so
 vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbrtac.so
@@ -148,7 +145,6 @@ vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libqtigef.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
 
 # Audio (Cirrus)
 vendor/etc/aov_ec_mixer_paths.xml
@@ -1084,7 +1080,6 @@ vendor/firmware/synaptics-tianma-s3908-20101607-313204-burton.img
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
