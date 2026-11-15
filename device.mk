@@ -201,7 +201,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BurtonFrameworks \
     BurtonSystemUI \
-    BurtonWifiRes
+    BurtonWifiRes \
+    FrameworksResMotoKona
 
 # NFC
 PRODUCT_PACKAGES += \
