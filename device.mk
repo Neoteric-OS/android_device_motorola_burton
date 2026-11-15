@@ -16,7 +16,6 @@ $(call inherit-product-if-exists, vendor/motorola/burton/burton-vendor.mk)
 
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
     alarm \
     audio \
     av \
