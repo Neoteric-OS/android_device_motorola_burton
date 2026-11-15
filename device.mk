@@ -157,6 +157,9 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
