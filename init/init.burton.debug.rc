@@ -1,0 +1,19 @@
+on post-fs
+    mkdir /metadata/bringup 0770 root log
+    exec - root root -- /system/bin/sh -c "rm -rf /metadata/bringup/prev; mkdir /metadata/bringup/prev; mv /metadata/bringup/*.txt /metadata/bringup/prev/ 2>/dev/null; cp -r /sys/fs/pstore /metadata/bringup/prev/ 2>/dev/null; true"
+    start bringup_dmesg
+    start bringup_logcat
+
+service bringup_dmesg /system/bin/sh -c "exec /system/bin/dmesg -w > /metadata/bringup/dmesg.txt"
+    user root
+    group root log
+    seclabel u:r:su:s0
+    disabled
+    oneshot
+
+service bringup_logcat /system/bin/logcat -b all -v threadtime -f /metadata/bringup/logcat.txt -r 8192 -n 4
+    user root
+    group root log
+    seclabel u:r:su:s0
+    disabled
+    oneshot
