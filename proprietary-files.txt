@@ -49,14 +49,6 @@ vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ADSP Daemon
-vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
-vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
-vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
-vendor/lib64/vndk/libtinyalsa.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0.so
-
 # Adreno
 # Graphics firmware
 -vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
@@ -782,8 +774,6 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Performance
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
