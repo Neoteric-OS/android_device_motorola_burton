@@ -318,6 +318,7 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
+    firmware_wlan_mac.bin_symlink \
     hostapd \
     libwifi-hal-qcom \
     wpa_supplicant \
