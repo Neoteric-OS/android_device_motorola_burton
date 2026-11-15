@@ -200,7 +200,8 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     BurtonFrameworks \
-    BurtonSystemUI
+    BurtonSystemUI \
+    BurtonWifiRes
 
 # NFC
 PRODUCT_PACKAGES += \
