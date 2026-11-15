@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.health@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -209,6 +210,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.st \
     android.hardware.secure_element@1.2.vendor \
+    libchrome.vendor \
     com.android.nfc_extras \
     Tag
 
