@@ -114,6 +114,7 @@ PRODUCT_PACKAGES_DEBUG += \
     init.burton.debug.rc
 
 # Display
+BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
 $(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-product.mk)
 
 PRODUCT_PACKAGES += \
