@@ -93,6 +93,9 @@ TARGET_KERNEL_CONFIG := \
     vendor/ext_config/burton-default.config
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_KERNEL_MODULES_LOAD)
+
 TARGET_MODULE_ALIASES += \
     adsp_loader_dlkm.ko:audio_adsp_loader.ko \
     apr_dlkm.ko:audio_apr.ko \
