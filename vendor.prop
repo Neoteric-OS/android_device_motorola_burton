@@ -8,5 +8,8 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 
+# NFC
+ro.vendor.hw.nfc=true
+
 # Customer
 vendor.build.customerid=retail
