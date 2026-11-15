@@ -84,6 +84,8 @@ BOARD_KERNEL_CMDLINE += \
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/motorola/sm8250
+TARGET_KERNEL_CLANG_VERSION := r596125
+TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_CONFIG := \
     vendor/kona-perf_defconfig \
     vendor/ext_config/moto-kona.config \
