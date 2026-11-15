@@ -17,14 +17,17 @@ $(call inherit-product-if-exists, vendor/motorola/burton/burton-vendor.mk)
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    alarm \
     audio \
     av \
     bt \
     display \
+    init \
     overlay \
     perf \
     telephony \
     usb \
+    wfd \
     wlan
 
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
@@ -161,15 +164,9 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
-    init.mdm.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sh \
     init.qti.dcvs.sh \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.motorola.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
