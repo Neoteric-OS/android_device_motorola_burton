@@ -273,7 +273,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.burton-multihal \
+    android.hardware.sensors-service.burton-multihal \
     libsensorndkbridge \
     sensors.moto-sm8250
 

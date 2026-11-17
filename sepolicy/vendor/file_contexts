@@ -1,1 +1,1 @@
-/vendor/bin/hw/android\.hardware\.sensors@2\.0-service\.burton-multihal    u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors-service\.burton-multihal    u:object_r:hal_sensors_default_exec:s0
