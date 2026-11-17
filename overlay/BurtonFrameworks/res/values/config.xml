@@ -280,6 +280,8 @@
     <!-- Default radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">105px</dimen>
 
+    <dimen name="status_bar_height_default">104px</dimen>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->

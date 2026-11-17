@@ -9,7 +9,7 @@
 
     <dimen name="rounded_corner_content_padding">50px</dimen>
 
-    <dimen name="status_bar_padding_top">22px</dimen>
+    <dimen name="status_bar_padding_top">8px</dimen>
 
     <dimen name="status_bar_padding_start">12dp</dimen>
 
