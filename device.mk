@@ -86,6 +86,9 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    com.motorola.motosignature
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 

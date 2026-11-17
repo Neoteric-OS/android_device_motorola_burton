@@ -1,2 +1,5 @@
 # eBPF
 ro.bpf.kver_override=5.10.239
+
+# Camera
+ro.camera.cfa.packagelist=com.motorola.coresettingsext,com.motorola.camera2,com.motorola.camera3,com.motorola.actions
