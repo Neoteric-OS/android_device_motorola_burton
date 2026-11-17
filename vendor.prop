@@ -17,7 +17,6 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # Media
 debug.stagefright.c2inputsurface=-1
-vendor.media.omx=0
 
 # Radio
 persist.radio.multisim.config=ssss

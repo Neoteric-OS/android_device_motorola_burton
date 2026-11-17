@@ -31,7 +31,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan
 
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
-TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
@@ -170,6 +169,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.lights.service
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    libstagefright_softomx_plugin.vendor
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
