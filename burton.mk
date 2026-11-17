@@ -3,13 +3,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Audio configs must precede QTI component copies
+# Audio and media configs must precede QTI component copies
 PRODUCT_COPY_FILES += \
     device/motorola/burton/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     device/motorola/burton/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     device/motorola/burton/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     device/motorola/burton/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
-    device/motorola/burton/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    device/motorola/burton/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    device/motorola/burton/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
+    device/motorola/burton/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 $(call inherit-product, vendor/neoteric/target/product/neoteric-target.mk)
 

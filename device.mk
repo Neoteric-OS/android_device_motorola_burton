@@ -22,6 +22,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     init \
+    media \
     overlay \
     perf \
     telephony \
@@ -30,6 +31,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan
 
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
@@ -168,14 +170,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.lights.service
 
 # Media
-$(call inherit-product, hardware/qcom-caf/sm8250/media/conf_files/kona/kona.mk)
-$(call inherit-product, hardware/qcom-caf/sm8250/media/product.mk)
-
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
