@@ -9,9 +9,9 @@
 
     <dimen name="rounded_corner_content_padding">50px</dimen>
 
-    <dimen name="status_bar_padding_top">8px</dimen>
+    <dimen name="status_bar_padding_start">0dp</dimen>
 
-    <dimen name="status_bar_padding_start">12dp</dimen>
+    <dimen name="status_bar_padding_end">0dp</dimen>
 
     <!-- The radius of the enrollment progress bar, in DP. -->
     <integer name="config_udfpsEnrollProgressBar">192</integer>
