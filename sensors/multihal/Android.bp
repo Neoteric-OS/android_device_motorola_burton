@@ -1,6 +1,5 @@
 cc_binary {
     name: "android.hardware.sensors@2.0-service.burton-multihal",
-    stem: "android.hardware.sensors@2.0-service.multihal",
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",
