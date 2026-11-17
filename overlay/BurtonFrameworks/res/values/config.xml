@@ -173,6 +173,9 @@
         <item>2</item>
     </array>
 
+    <!-- No DSP music detection, let ASI hide Now Playing -->
+    <string-array name="config_forceEnabledComponents" translatable="false" />
+
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
     <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
 
