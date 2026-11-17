@@ -182,6 +182,8 @@
     <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_tap</string>
     <bool name="config_dozeTapGestureEnabled">false</bool>
 
+    <bool name="config_dozePulsePickup">true</bool>
+
     <!-- Enable double tap to wake by default -->
     <bool name="config_dozeDoubleTapGestureEnabled">true</bool>
 
