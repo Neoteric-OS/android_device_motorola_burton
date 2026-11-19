@@ -57,6 +57,14 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
 # Audio
+PRODUCT_ODM_PROPERTIES += \
+    vendor.audio.feature.battery_listener.enable=false \
+    vendor.audio.feature.dynamic_ecns.enable=false \
+    vendor.audio.feature.hdmi_edid.enable=false \
+    vendor.audio.feature.hdmi_passthrough.enable=false \
+    vendor.audio.feature.keep_alive.enable=false \
+    vendor.audio.feature.ssrec.enable=false
+
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@6.0-impl \
