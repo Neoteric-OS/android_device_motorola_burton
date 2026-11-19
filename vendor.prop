@@ -50,6 +50,7 @@ persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
 persist.vendor.audio.dualmic.config=endfire
 ro.config.vc_call_vol_steps=8
+af.fast_track_multiplier=1
 vendor.audio.snd_card.open.retries=50
 ro.audio.monitorRotation=true
 persist.vendor.audio.okg_hotword_ext_dsp=true
