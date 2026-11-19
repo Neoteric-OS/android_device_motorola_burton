@@ -63,7 +63,10 @@ PRODUCT_ODM_PROPERTIES += \
     vendor.audio.feature.hdmi_edid.enable=false \
     vendor.audio.feature.hdmi_passthrough.enable=false \
     vendor.audio.feature.keep_alive.enable=false \
-    vendor.audio.feature.ssrec.enable=false
+    vendor.audio.feature.ssrec.enable=false \
+    vendor.audio_hal.in_period_size=240 \
+    vendor.audio_hal.period_multiplier=4 \
+    vendor.audio_hal.period_size=240
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
