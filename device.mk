@@ -58,15 +58,18 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_ODM_PROPERTIES += \
+    persist.vendor.audio.voicecall.speaker.stereo=false \
     vendor.audio.feature.battery_listener.enable=false \
     vendor.audio.feature.dynamic_ecns.enable=false \
     vendor.audio.feature.hdmi_edid.enable=false \
     vendor.audio.feature.hdmi_passthrough.enable=false \
     vendor.audio.feature.keep_alive.enable=false \
+    vendor.audio.feature.spkr_prot.enable=false \
     vendor.audio.feature.ssrec.enable=false \
     vendor.audio_hal.in_period_size=240 \
     vendor.audio_hal.period_multiplier=4 \
-    vendor.audio_hal.period_size=240
+    vendor.audio_hal.period_size=240 \
+    vendor.voice.path.for.pcm.voip=false
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
