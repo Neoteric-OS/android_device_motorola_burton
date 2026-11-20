@@ -51,6 +51,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/audio_effects.xml)
+            sed -i '/<effectProxy name="music_helper"/,/<\/effectProxy>/d; /<postprocess>/,/<\/postprocess>/d; /<preprocess>/,/<\/preprocess>/d' "${2}"
+            sed -i '/mmieffects\|mot_speaker_helper\|maxxaudio3\|_helper"\|name="aec"\|name="ns"/d' "${2}"
+            ;;
         system_ext/etc/permissions/moto-telephony.xml)
             sed -i 's|/system/framework/|/system_ext/framework/|g' "${2}"
             ;;
