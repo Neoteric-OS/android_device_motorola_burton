@@ -51,6 +51,11 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ -n "$(tail -c 1 "${2}")" ] && echo >> "${2}"
+            grep -q "^gettid:" "${2}" || echo "gettid: 1" >> "${2}"
+            grep -q "^lseek:" "${2}" || echo "lseek: 1" >> "${2}"
+            ;;
         vendor/etc/audio_effects.xml)
             sed -i '/<effectProxy name="music_helper"/,/<\/effectProxy>/d; /<postprocess>/,/<\/postprocess>/d; /<preprocess>/,/<\/preprocess>/d' "${2}"
             sed -i '/mmieffects\|mot_speaker_helper\|maxxaudio3\|_helper"\|name="aec"\|name="ns"/d' "${2}"
