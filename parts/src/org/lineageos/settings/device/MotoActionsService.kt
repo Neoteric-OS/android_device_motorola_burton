@@ -40,10 +40,11 @@ class MotoActionsService : Service() {
             }
         val sensorHelper = SensorHelper(this)
 
-        updatedStateNotifiers.add(ChopForTorch(this, sharedPrefs, sensorHelper))
-        updatedStateNotifiers.add(ProximitySilencer(this, sharedPrefs, sensorHelper))
-        updatedStateNotifiers.add(FlipToMute(this, sharedPrefs, sensorHelper))
-        updatedStateNotifiers.add(LiftToSilence(this, sharedPrefs, sensorHelper))
+        listOf(::ChopForTorch, ::ProximitySilencer, ::FlipToMute, ::LiftToSilence).forEach {
+            runCatching { it(this, sharedPrefs, sensorHelper) }
+                .onSuccess(updatedStateNotifiers::add)
+                .onFailure { e -> Log.e(TAG, "Sensor missing, skipping action", e) }
+        }
 
         updateState()
     }
