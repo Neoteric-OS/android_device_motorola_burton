@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "BurtonWifiRes",
+    name: "SystemUIRes",
     vendor: true,
 }

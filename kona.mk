@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/motorola/burton
+DEVICE_PATH := device/motorola/burton
 
 TARGET_BOARD_PLATFORM := kona
 
@@ -57,20 +57,6 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
 # Audio
-PRODUCT_ODM_PROPERTIES += \
-    persist.vendor.audio.voicecall.speaker.stereo=false \
-    vendor.audio.feature.battery_listener.enable=false \
-    vendor.audio.feature.dynamic_ecns.enable=false \
-    vendor.audio.feature.hdmi_edid.enable=false \
-    vendor.audio.feature.hdmi_passthrough.enable=false \
-    vendor.audio.feature.keep_alive.enable=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.feature.ssrec.enable=false \
-    vendor.audio_hal.in_period_size=240 \
-    vendor.audio_hal.period_multiplier=4 \
-    vendor.audio_hal.period_size=240 \
-    vendor.voice.path.for.pcm.voip=false
-
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@6.0-impl \
@@ -170,8 +156,8 @@ PRODUCT_PACKAGES += \
     ueventd.motorola.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
-    $(LOCAL_PATH)/init/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
+    $(DEVICE_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
+    $(DEVICE_PATH)/init/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -210,10 +196,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    BurtonFrameworks \
-    BurtonSystemUI \
-    BurtonWifiRes \
-    FrameworksResMotoKona
+    FrameworksRes \
+    SystemUIRes \
+    WifiRes
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -288,7 +273,7 @@ PRODUCT_PACKAGES += \
     sensors.moto-sm8250
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(DEVICE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Shims
 PRODUCT_PACKAGES += \
@@ -299,7 +284,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(DEVICE_PATH)
 
 # Thermal
 $(call soong_config_set,qti_thermal,netlink,false)
